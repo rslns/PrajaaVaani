@@ -1,0 +1,36 @@
+# backend
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/.env
+backend/prajaavaani.db
+
+# frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/serviceAccountKey.json
+# Backend
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
+
+# Backend environment variables
+backend/.env
+
+# Local database
+backend/prajaavaani.db
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# Uploaded files
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Firebase / service account secret
+backend/serviceAccountKey.json
