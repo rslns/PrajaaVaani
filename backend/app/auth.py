@@ -1,3 +1,4 @@
+
 import json
 import os
 
@@ -51,7 +52,11 @@ def _verify_token(authorization: str | None) -> dict:
 
     try:
         return firebase_auth.verify_id_token(token)
-    except Exception:
+    except Exception as exc:
+        print(
+            f"Firebase token verification failed: "
+            f"{type(exc).__name__}: {exc}"
+        )
         raise HTTPException(
             status_code=401,
             detail="Invalid or expired login token",
